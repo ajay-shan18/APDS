@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Ration Vending</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="logo.png" alt="APDS">
+      </div>
+      <h1>AUTOMATED RATION VENDING</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" onclick="goToHome()">Home</a></li>
+          <li><a href="#contact" onclick="goToContact()">Contact Us</a></li>
+          <li><a href="#about" onclick="goToAbout()">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main>
+    
+    <div id="home-page" class="home-container">
+      <h1>Welcome to Automated Ration Vending</h1>
+      <img src="card.png">
+      <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter User ID">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    
+    <div id="ration-page" class="ration-container" style="display: none;">
+      <h1>Ration Items</h1>
+      <div id="items-container"></div>
+      <button onclick="generateBill()">Generate Bill</button>
+    </div>
+
+    
+    <div id="bill-page" class="bill-container" style="display: none;">
+      <h1>Bill Summary</h1>
+      <div class="receipt-box">
+        <p><strong>Username:</strong> <span id="bill-username"></span></p>
+        <P><strong>User Name:</strong> SUSILA P</P>
+        <P><strong>User Age:</strong> 70</P>
+        <div id="bill-items"></div>
+        <h2>Total Amount: ₹<span id="bill-total"></span></h2>
+      </div>
+      <button onclick="goToHome()">Back to Home</button>
+    </div>
+
+    
+    <div id="contact-page" class="info-page" style="display: none;">
+ 
+      <h2>Contact Us</h2>
+      <p><strong>FOUNDER & CEO:</strong> SHANMUGA K</p>
+      <p><strong>Phone:</strong> 6382095271</p>
+      <p><strong>Email:</strong> selvakalimuthu8300@gmail.com</p>
+      <p><strong>Location:</strong> Tambaram</p>
+  
+    </div>
+
+    
+    <div id="about-page" class="info-page" style="display: none;">
+      <h2>About Us</h2>
+      <p><strong>FOUNDER & CEO:</strong> SHANMUGA K</p>
+      <p><strong>MANAGING DIRECTOR:</strong> JAI AKASH R</p>
+      <p><strong>MANAGING DIRECTOR:</strong> SURIYA K</p>
+      <p><strong>GUIDE:</strong> Mr: VASANTHAN P</p>
+    </div>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2024 APDS. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
